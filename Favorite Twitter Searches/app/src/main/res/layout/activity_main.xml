@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pmp.domasna1.MainAct"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/searchID"
+                android:hint="Enter Twitter search query here" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/queryID"
+                android:layout_weight="0.6"
+                android:contextClickable="false"
+                android:hint="Tag your query" />
+
+            <Button
+                android:text="Save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/save"
+                android:layout_weight="0.4"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:weightSum="1"
+            tools:background="#FCC771">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                >
+            <TextView
+                android:text="@string/tagged_searches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"
+                tools:textStyle="bold"
+                android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:text="AndroidFP"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnAnd"
+                    android:layout_weight="0.7"
+                    android:autoText="false"
+                    android:textAllCaps="false" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnedit1"
+                    android:layout_weight="0.2"
+                    android:textAllCaps="false"
+                    android:text="Edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:text="Deitel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnDel"
+                    android:layout_weight="0.7"
+                    android:textAllCaps="false" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnedit2"
+                    android:layout_weight="0.2"
+                    android:textAllCaps="false"
+                    android:text="Edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:text="Google"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnGoo"
+                    android:layout_weight="0.7"
+                    android:textAllCaps="false" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnedit3"
+                    android:layout_weight="0.2"
+                    android:textAllCaps="false"
+                    android:text="Edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnIph"
+                    android:layout_weight="0.7"
+                    android:textAllCaps="false"
+                    android:text="iPhoneFP" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnedit4"
+                    android:layout_weight="0.2"
+                    android:textAllCaps="false"
+                    android:text="Edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:text="JavaFp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnJavFP"
+                    android:layout_weight="0.7"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnedit5"
+                    android:layout_weight="0.2"
+                    android:textAllCaps="false"
+                    android:text="Edit" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:text="JavaHTP"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnJavHTP"
+                    android:layout_weight="0.7"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnedit6"
+                    android:layout_weight="0.2"
+                    android:textAllCaps="false"
+                    tools:text="Edit" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="0dp">
+
+
+            <Button
+                android:text="Clear Tags"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnClear"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
